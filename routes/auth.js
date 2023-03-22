@@ -12,17 +12,17 @@ const router = Router();
 
 
 router.post('/', [
-    check('email', 'required').isEmail(),
-    check('password', 'required and more than 6 characters').isLength({ min: 6 }),
-    validateFields
+	check('email', 'required').isEmail(),
+	check('password', 'required and more than 6 characters').isLength({ min: 6 }),
+	validateFields
 ],loginUser);
 
 router.post('/new', [
-    //middlewares
-    check('name', 'required').not().isEmpty(),
-    check('email', 'required').isEmail(),
-    check('password', 'required and more than 6 characters').isLength({ min: 6 }),
-    validateFields,
+	//middlewares
+	check('name', 'required').not().isEmpty(),
+	check('email', 'required').isEmail(),
+	check('password', 'required and more than 6 characters').isLength({ min: 6 }),
+	validateFields,
 ], createUser);
 
 router.get('/renew', validateJWT,renewToken);

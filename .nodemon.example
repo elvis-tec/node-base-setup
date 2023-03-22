@@ -1,0 +1,5 @@
+{
+    "PORT": 4000,
+    "DB_CNN": "mongodb://localhost:27017/SOME_DB",
+    "SECRET_JWT_SEED": "This-Is-A-Secret-WORD"
+}
