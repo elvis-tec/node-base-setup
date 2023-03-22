@@ -1,0 +1,51 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "keyword-spacing": ["error", { "before": true }],
+        "eol-last": ["error", "always"],
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "*", "next": "if" },
+            { "blankLine": "always", "prev": "*", "next": "return" },
+            { "blankLine": "always", "prev": "*", "next": "try" },
+            { "blankLine": "always", "prev": "*", "next": "function" },
+            { "blankLine": "always", "prev": "*", "next": "throw" },
+            { "blankLine": "always", "prev": "*", "next": "break" },
+            { "blankLine": "always", "prev": "*", "next": "switch" },
+            { "blankLine": "always", "prev": "*", "next": "for" },
+            { "blankLine": "always", "prev": "*", "next": "while" },
+            { "blankLine": "always", "prev": "*", "next": "do" }
+        ],
+        "sort-imports": ["error", {
+            "ignoreCase": false,
+            "ignoreDeclarationSort": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+        }],
+        "sort-keys": ["error", "asc", {"caseSensitive": true, "natural": false}],
+        "sort-vars": ["error", { "ignoreCase": false }],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}

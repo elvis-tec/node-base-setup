@@ -131,3 +131,4 @@ dist
 
 # extras
 package-lock.json
+nodemon.json
